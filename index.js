@@ -9,6 +9,7 @@ let b4 = 0;
 function fun() {
     setInterval(function () {
         b1++;
+        console.log(b1);
         b3++
     },1000)
 }
