@@ -15,6 +15,8 @@ function fun() {
    axios.get("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&V1")
     .then((res)=>{
         console.log(res.data);
+    }).catch((err)=>{
+        console.log(err);
     })
 
         console.log(b1);
