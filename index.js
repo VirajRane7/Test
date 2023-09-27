@@ -10,9 +10,9 @@ let b2 = 0;
 let b3 = 0;
 let b4 = 0;
 
-function fun() {
+async function fun() {
     setInterval(function () {
-   axios.get("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&V1")
+   await axios.get("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&V1")
     .then((res)=>{
         console.log(res.data);
     }).catch((err)=>{
