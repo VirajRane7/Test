@@ -80,49 +80,9 @@ let state4 = 0;
 function fetchData() {
     
     setInterval(function () {
-        var dateTime = new Date();
-
-        let time = dateTime.toTimeString().substring(0,8);
-
-        if (time=="16:35:00") {
-            let sqlInsert = "INSERT INTO button_uptime (uptime , button_name, date) VALUES (?,'Button_1',CURDATE())";
-            db.query(sqlInsert,b1,(error,result)=>{
-                        console.log("Error ",error);
-                        console.log("Result", result);
-                        // res.send("Hello Express");
-                });
-
-                sqlInsert = "INSERT INTO button_uptime (uptime , button_name, date) VALUES (?,'Button_2',CURDATE())";
-            db.query(sqlInsert,b2,(error,result)=>{
-                        console.log("Error ",error);
-                        console.log("Result", result);
-                        // res.send("Hello Express");
-                });
-
-                sqlInsert = "INSERT INTO button_uptime (uptime , button_name, date) VALUES (?,'Button_3',CURDATE())";
-            db.query(sqlInsert,b3,(error,result)=>{
-                        console.log("Error ",error);
-                        console.log("Result", result);
-                        // res.send("Hello Express");
-                });
-
-                sqlInsert = "INSERT INTO button_uptime (uptime , button_name, date) VALUES (?,'Button_4',CURDATE())";
-            db.query(sqlInsert,b4,(error,result)=>{
-                        console.log("Error ",error);
-                        console.log("Result", result);
-                        // res.send("Hello Express");
-                });
-                
-                
-
-                b1 = 0;
-                b2 = 0;
-                b3 = 0;
-                b4 = 0;
-                // return
-        }
+       
         
-    // return
+    
     let n = fetch("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&V1")
     n.then((response)=>{
         return response.json()
