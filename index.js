@@ -38,6 +38,8 @@ function fun() {
 
         }
     })
+
+        console.log(b1);
         b1++;
         b3++
     },1000)
