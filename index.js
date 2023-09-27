@@ -1,3 +1,4 @@
+const { default: axios } = require("axios");
 const express = require("express");
 const app = express();
 const fetch = require("node-fetch");
@@ -11,32 +12,9 @@ let b4 = 0;
 
 function fun() {
     setInterval(function () {
-    fetch("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&V1")
-    .then((response)=>{
-        return response.json()
-    }).then((value)=>{
-        // console.log(value)
-        if (value == 1) {
-            // if (state1==0) {
-                // state1 = 1;
-                // checkState(state1, "Button_1");
-                // isStop1 = false;
-                // timer1()
-            // }
-            
-           console.log(value); 
-            
-        }else{  
-            // if (state1==1) {
-                
-            //     state1=0;
-            //     // checkState2(state1, "Button_1");
-            //     // isStop1 = true;
-            // }
-        //    console.log("Button 1 off"); 
-            
-
-        }
+   axios.get("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&V1")
+    .then((res)=>{
+        console.log(res.data);
     })
 
         console.log(b1);
