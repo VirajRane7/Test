@@ -16,13 +16,13 @@ function fun() {
     .then((res)=>{
         console.log(res.data);
     }).catch((err)=>{
-        console.log(err);
+        console.log("Error");
     })
 
         console.log(b1);
         b1++;
         b3++
-    },10000)
+    },1000)
 }
 
 
