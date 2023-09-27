@@ -11,8 +11,8 @@ let b4 = 0;
 
 function fun() {
     setInterval(function () {
-         let n = fetch("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&V1")
-    n.then((response)=>{
+    fetch("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&V1")
+    .then((response)=>{
         return response.json()
     }).then((value)=>{
         // console.log(value)
