@@ -50,7 +50,7 @@ let b4 = 0;
    //      b1++;
    //      b3++
 
-       fetch("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&dataStreamId=2")
+       fetch("https://blynk.cloud/external/api/get?token=-LjjqlSOOczD-lAQaaYiG6G9MAQMxNba&V0")
     .then((response)=>{
         return response.json()
     }).then((value)=>{
