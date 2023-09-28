@@ -57,7 +57,7 @@ async function fun() {
    //  }).catch((err)=>{
    //      console.log("Error");
    //  })
-     await fetch("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&V1")
+     await fetch("https://jsonplaceholder.typicode.com/todos/1")
     .then((response)=>{
         return response.json()
     }).then((value)=>{
