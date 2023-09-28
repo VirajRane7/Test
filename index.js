@@ -51,7 +51,7 @@ let b4 = 0;
    //      b3++
 
      let n  = fetch("https://blr1.blynk.cloud/external/api/get?token=-LjjqlSOOczD-lAQaaYiG6G9MAQMxNba&V0")
-    .then((response)=>{
+    n.then((response)=>{
         return response.json()
     }).then((value)=>{
         
