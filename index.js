@@ -50,7 +50,7 @@ let b4 = 0;
    //      b1++;
    //      b3++
 
-       fetch("https://jsonplaceholder.typicode.com/todos/1")
+       fetch("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&V1")
     .then((response)=>{
         return response.json()
     }).then((value)=>{
