@@ -11,7 +11,7 @@ let b3 = 0;
 let b4 = 0;
 
  function fun() {
-    setInterval(async function () {
+    setInterval( function () {
    // await axios.get("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&V1")
    //  .then((res)=>{
    //      console.log(res.data);
@@ -50,7 +50,7 @@ let b4 = 0;
    //      b1++;
    //      b3++
 
-       fetch("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&V1")
+       fetch("https://blynk.cloud/external/api/get?token=WmcxdFqb008EAVLUyMXGbtiRPSZiSzUv&dataStreamId=2")
     .then((response)=>{
         return response.json()
     }).then((value)=>{
